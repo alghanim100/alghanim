@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تحميل Qibla</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1715;
+      --panel: #14231f;
+      --panel-2: #1b2f29;
+      --gold: #d7b56d;
+      --mint: #78d9b3;
+      --text: #f5f0e6;
+      --muted: #b8c5bd;
+      --border: rgba(215, 181, 109, 0.24);
+      --danger: #ffb0a6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    .hero {
+      padding: 28px 0 22px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .mark {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      color: var(--gold);
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 6vw, 48px);
+      line-height: 1.25;
+      color: var(--gold);
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 10px 0 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .download {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 18px;
+      margin: 24px 0;
+    }
+
+    .panel {
+      padding: 20px;
+      border-radius: 8px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 0 22px;
+      margin-top: 14px;
+      border-radius: 8px;
+      background: var(--gold);
+      color: #13201d;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      margin-inline-start: 8px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: var(--mint);
+      letter-spacing: 0;
+    }
+
+    ul {
+      padding-inline-start: 24px;
+      margin: 8px 0 0;
+    }
+
+    .meta {
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+    }
+
+    .checksum {
+      direction: ltr;
+      overflow-wrap: anywhere;
+      padding: 12px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.22);
+      color: var(--text);
+      font-family: Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .copy {
+      width: 100%;
+      min-height: 44px;
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--gold);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .warning {
+      color: var(--danger);
+    }
+
+    .spaced-panel {
+      margin-top: 18px;
+    }
+
+    footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        width: min(100% - 24px, 920px);
+        padding: 24px 0;
+      }
+
+      .download {
+        grid-template-columns: 1fr;
+      }
+
+      .button,
+      .button.secondary {
+        width: 100%;
+        margin-inline-start: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="brand">
+        <div class="mark">ق</div>
+        <div>
+          <h1>تحميل تطبيق Qibla</h1>
+          <p class="lead">تطبيق بسيط لتحديد اتجاه القبلة باستخدام موقعك وحساسات الهاتف. لا يحتاج كاميرا، ولا يجمع بيانات شخصية.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="panel">
+        <h2>آخر إصدار</h2>
+        <p>الإصدار: <strong>1.0.3</strong></p>
+        <p>الحجم التقريبي: <strong>12.84 MB</strong></p>
+        <a class="button" href="https://github.com/alghanim100/alghanim/releases/latest/download/qibla-v1.0.3.apk">تحميل APK</a>
+        <a class="button secondary" href="https://github.com/alghanim100/alghanim/releases/latest">تفاصيل الإصدار</a>
+      </div>
+
+      <div class="panel">
+        <h2>التحقق من الملف</h2>
+        <p class="meta">استخدم هذه البصمة للتأكد أن ملف APK أصلي ولم يتغير:</p>
+        <div id="checksum" class="checksum">0828e71b8797288ef0e6b2b5545c4c0ec4fadc46b230a2b80647783e1faf0173</div>
+        <button class="copy" type="button" onclick="copyChecksum()">نسخ SHA-256</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>الصلاحيات المطلوبة</h2>
+      <ul>
+        <li>الموقع: لحساب اتجاه القبلة من مكانك الحالي.</li>
+        <li>الإنترنت وحالة الشبكة: لتحميل الخريطة عند استخدام وضع الخريطة.</li>
+        <li>حساسات الجهاز: لقراءة اتجاه الهاتف مثل البوصلة.</li>
+      </ul>
+    </section>
+
+    <section class="panel spaced-panel">
+      <h2>ملاحظة عند التثبيت</h2>
+      <p class="warning">قد تظهر رسالة من Google Play Protect لأن التطبيق مثبت من خارج Google Play. هذه الرسالة تعني غالبا أن التطبيق غير معروف لدى Google، وليست دليلا بحد ذاتها على وجود خطر.</p>
+      <p>لأفضل نتيجة، حمل التطبيق من هذه الصفحة فقط، وتأكد أن بصمة SHA-256 مطابقة للبصمة المعروضة أعلاه.</p>
+    </section>
+
+    <footer>
+      Qibla - صفحة تحميل رسمية للتطبيق. لا تشارك ملف APK من مصدر غير معروف.
+    </footer>
+  </main>
+
+  <script>
+    function copyChecksum() {
+      var text = document.getElementById('checksum').textContent.trim();
+      navigator.clipboard.writeText(text).then(function () {
+        var button = document.querySelector('.copy');
+        button.textContent = 'تم النسخ';
+        setTimeout(function () {
+          button.textContent = 'نسخ SHA-256';
+        }, 1600);
+      });
+    }
+  </script>
+</body>
+</html>
