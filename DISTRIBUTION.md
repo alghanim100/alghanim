@@ -6,8 +6,8 @@ This project can be shared outside WhatsApp by publishing the APK as a GitHub Re
 
 - File: `app/release/qibla-v1.0.5.apk`
 - Version: `1.0.5`
-- Size: `11.53 MB`
-- SHA-256: `414ecb31c300479e11069cb9f35ed1d39b7fda5713f8f16d2f985ff64750c0fe`
+- Size: `11.54 MB`
+- SHA-256: `c5ac1c8e800058059b8854f9edf0f85887749b2aa959312066e109b1598e7b28`
 
 ## Recommended Flow
 
