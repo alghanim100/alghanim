@@ -4,10 +4,10 @@ This project can be shared outside WhatsApp by publishing the APK as a GitHub Re
 
 ## Current APK
 
-- File: `app/release/qibla-v1.0.3.apk`
-- Version: `1.0.3`
-- Size: `12.84 MB`
-- SHA-256: `0828e71b8797288ef0e6b2b5545c4c0ec4fadc46b230a2b80647783e1faf0173`
+- File: `app/release/qibla-v1.0.4.apk`
+- Version: `1.0.4`
+- Size: `11.26 MB`
+- SHA-256: `02f4d452ecefc01fba4844716fb8c56326dd2892acf88eb3de1a829663527d7e`
 
 ## Recommended Flow
 
@@ -15,15 +15,15 @@ This project can be shared outside WhatsApp by publishing the APK as a GitHub Re
 2. Calculate the APK SHA-256:
 
 ```powershell
-Get-FileHash -Path .\app\release\qibla-v1.0.3.apk -Algorithm SHA256
+Get-FileHash -Path .\app\release\qibla-v1.0.4.apk -Algorithm SHA256
 ```
 
-3. Create a GitHub Release named `v1.0.3`.
-4. Upload `qibla-v1.0.3.apk` as a release asset.
+3. Create a GitHub Release named `v1.0.4`.
+4. Upload `qibla-v1.0.4.apk` as a release asset.
 5. Open `docs/index.html` and replace:
 
 ```text
-https://github.com/alghanim100/alghanim/releases/latest/download/qibla-v1.0.3.apk
+https://github.com/alghanim100/alghanim/releases/latest/download/qibla-v1.0.4.apk
 https://github.com/alghanim100/alghanim/releases/latest
 ```
 
